@@ -1,0 +1,22 @@
+@keyframes loading {
+    0% {
+        margin-left: 0px;
+    }
+    30% {
+        background-color: red;
+    }
+    79% {
+        background-color: blue;
+    }
+    100% {
+        margin-left: calc(100% - 100px);
+        background-color: yellow;
+    }
+}
+.animate-loading{
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation:loading 2s infinite linear alternate;
+}
