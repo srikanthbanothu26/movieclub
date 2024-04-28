@@ -32,6 +32,7 @@ def movie_():
         url = f"http://www.omdbapi.com/?t={movie_name}&apikey={api_key}"
         resp = requests.get(url)
         data = resp.json()
+        print(data)
         
         if "Title" in data:
             title = data["Title"].lower()
